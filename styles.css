@@ -1,9 +1,9 @@
 body {
-    background-color: #121212; /* Dark grey/black */
-    color: white; /* Makes text readable */
-    font-family: 'Inter', sans-serif; /* Optional: Improve text styling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background-color: #121212;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* title bar/navigation */
@@ -79,13 +79,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hover Effect */
+/* hover */
 nav ul li a:hover {
     background-color: #333;
     border-radius: 5px;
 }
 body {
-    padding-top: 80px; /* Adjust based on navbar height */
+    padding-top: 80px;
 }
 /* Home Section */
 #home {
@@ -93,11 +93,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Full screen height */
+    height: 10vh; /* Full screen??? */
     text-align: center;
 }
 
-/* Styling the name as a home button */
+/* name and home button w/ same formatting */
 .title a {
     text-decoration: none;
     color: white;
@@ -110,7 +110,7 @@ body {
     color: #ffcc00; /* Highlight on hover */
 }
 
-/* Home Section - Center Content */
+/* Home Section */
 #home {
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@ body {
     padding-top:30px;
 }
 
-/* Box Around Name, Location, and Intro */
+/* Box around name, location etc */
 .home-box {
     display: flex;
     flex-direction: column;
@@ -137,7 +137,7 @@ body {
     top: 20px; /* Adjust this to move it back to its original position */
     margin-top: 3500px;
 }
-/* Text Styling */
+/* Text Styling - edit later */
 .home-text h1 {
     font-size: 40px;
     font-weight: bold;
@@ -147,14 +147,14 @@ body {
 
 .home-text p {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.8); /* Slightly faded text */
+    color: rgba(255, 255, 255, 0.8); /* Slightly faded text for less important */
     margin-top: 10px;
     margin-bottom: 35px;
 }
 
-/* Location Styling */
+
 .location {
-    color: #a0a0a0; /* Lighter gray */
+    color: #a0a0a0;
 }
 
 /* Social Icons */
@@ -172,7 +172,7 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.1); /* Dark button */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     color: white;
     text-decoration: none;
@@ -189,7 +189,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Remove Underline from Icons */
+/* no underline */
 .icon {
     text-decoration: none;
 }
@@ -210,13 +210,13 @@ body {
 
 /* Scrolling Skills Container */
 .skills-container {
-    width: 40%; /* Adjust to control window width */
+    width: 40%;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin: 0 auto; /* Centers it horizontally */
-    background-color: rgba(255, 255, 255, 0.05); /* Subtle background */
-    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px; /* round corners */
     padding: 20px 0;
 }
 
@@ -246,7 +246,7 @@ body {
 
 .skills-header h2 {
     text-align: left;
-    padding-left: 30%; /* Adjust this value if needed */
+    padding-left: 30%;
     margin-bottom: 10px;
 }
 
@@ -287,7 +287,7 @@ body {
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
-    left: -41px; /* Centers dot on the timeline */
+    left: -41px;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease;
@@ -304,27 +304,27 @@ body {
 
 /* Hover Effect */
 .timeline-dot:hover {
-    width: 40px; /* Increase size */
+    width: 40px;
     height: 40px;
     box-shadow: 0 0 20px rgba(130, 197, 226, 0.9); /* Glow effect */
-    background-color: #00d4ff; /* Slightly brighter color */
+    background-color: #00d4ff;
     border-color: #fff;
     border-color: white;
-    font-size: 18px; /* Increase number size */
+    font-size: 18px;
     color: white;
 
 }
 
 /* Show Number Inside Dot */
 .timeline-dot::before {
-    content: attr(data-number); /* Display the number */
+    content: attr(data-number);
     color: black;
     font-size: 14px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-/* Make Number White on Hover */
+/* num is white on hover */
 .timeline-dot:hover::before {
     color: white;
     font-size: 18px;
@@ -346,7 +346,7 @@ body {
     object-fit: cover;
 }
 
-/* School Information */
+/* School Info */
 .school-info {
     display: flex;
     flex-direction: column;
@@ -381,7 +381,7 @@ body {
 }
 
 .profile-picture img {
-    width: 150px; /* Adjust size as needed */
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid white;
@@ -389,7 +389,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Resume Button Styling */
+/* Resume Button Style*/
 .resume-button {
     display: flex;
     align-items: center;
@@ -414,7 +414,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Home Box Layout */
+/* Home Box */
 .top-section {
     display: flex;
     align-items: center;
@@ -432,29 +432,29 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Home Text (Reduce Space) */
+/* Home Text */
 .home-text p.location {
-    margin-bottom: 10px; /* Decrease space between location and intro */
+    margin-bottom: 10px;
 }
 
 /* Intro Text Styling */
 .home-box p {
-    font-size: 20px; /* Increase intro text size */
+    font-size: 20px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 10px;
 }
 
-/* Starry Background Canvas */
+/* Starry/Night Background */
 #starry-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind all content */
-    pointer-events: none; /* Prevent interaction */
-    background-color: #121212; /* Keep dark theme */
+    z-index: -1;
+    pointer-events: none;
+    background-color: #121212;
 }
 
 /* Skills Section */
@@ -473,7 +473,7 @@ body {
 /* Skills Grid Layout */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 0 10%;
     justify-content: center;
@@ -563,7 +563,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Gradient Overlay for Readability */
+/* Gradient Overlay for Readability/User Friendly */
 .project-image::after {
     content: "";
     position: absolute;
@@ -572,7 +572,7 @@ body {
     width: 100%;
     height: 50%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    pointer-events: none; /* Ensures interaction with image still works */
+    pointer-events: none;
 }
 
 /* Project Info */
@@ -618,7 +618,7 @@ body {
     font-size: 18px;
 }
 
-/* Project Description */
+/* Project Desc */
 .project-description {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
@@ -644,15 +644,15 @@ body {
 }
 
 .project-card:hover .project-info {
-    transform: translateY(-20px); /* Move text up */
+    transform: translateY(-20px);
 }
 
 .project-card:hover .learn-more-btn {
-    display: inline-block; /* Show button */
+    display: inline-block;
     animation: fadeIn 0.3s ease;
 }
 
-/* Fade In Animation */
+/* Fade In Ani */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }

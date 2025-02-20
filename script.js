@@ -5,10 +5,10 @@ window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
 
     if (currentScroll > lastScrollTop) {
-        // Scroll down - hide navbar
+        // Scroll down -> hide navbar
         header.style.top = "-80px";  // Moves navbar out of view
     } else {
-        // Scroll up - show navbar
+        // Scroll up -> show navbar
         header.style.top = "0";
     }
 
@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
 const canvas = document.getElementById('starry-background');
 const ctx = canvas.getContext('2d');
 
-// Set canvas size
+// canvas size
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
@@ -31,11 +31,11 @@ for (let i = 0; i < numStars; i++) {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: Math.random() * 2, // Star size
-        speed: Math.random() * 0.5 + 0.1 // Movement speed
+        speed: Math.random() * 0.5 + 0.1 // speed
     });
 }
 
-// Draw stars
+// stars
 function drawStars() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = 'white';
@@ -47,7 +47,7 @@ function drawStars() {
 
         // Move stars slightly up and down
         star.y += star.speed;
-        if (star.y > canvas.height) star.y = 0; // Reset if off-screen
+        if (star.y > canvas.height) star.y = 0; // Reset if not in view
     });
 
     requestAnimationFrame(drawStars);

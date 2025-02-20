@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Starry Background Canvas -->
+<canvas id="starry-background"></canvas>
+
     <header>
         <div class="title">
-            Camden Mertz
+            cmertz.dev
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -28,90 +30,87 @@
     <!--camden mertz "home" section-->
     <section id="home">
         <div class="home-box">
+            <div class="top-section">
+                <!-- Profile Picture on the left -->
+                <div class="profile-picture">
+                    <img src="images/profile.jpg" alt="Profile Picture">
+                </div>
+        
+                <!-- Name and Location -->
+                <div class="home-text">
+                    <h1>Camden Mertz <span class="wave">👋</span></h1>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i> Washington DC (US Citizen)
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Icons Section -->
             <div class="home-icons">
+                <!-- Social Icons -->
                 <a href="mailto:camden.mertz@email.com" class="icon"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/camden-mertz-973577203/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
                 <a href="tel:+1234567890" class="icon"><i class="fas fa-phone"></i></a>
+            
+                <!-- Resume Button (placed below icons) -->
+                <a href="files/Resume.pdf" class="resume-button" download>
+                    <i class="fas fa-file-arrow-down"></i> Resume
+                </a>
             </div>
-            <div class="home-text">
-                <h1>Camden Mertz</h1>
-                <p class="location">
-                    <i class="fas fa-map-marker-alt"></i> Washington DC, United States (United States Citizen)
-                </p>
-                <p>I am a 21 year old Full-Stack Developer. Currently, I’m completing my Associate’s Degree in Computer Science, graduating in May 2025. I plan to continue my education and earn my Bachelor’s Degree from Virginia Tech or the University of Virginia.</p>
-            </div>
+        
+            <!-- Intro Section -->
+            <p>I am a 21 year old Full-Stack Developer. Currently, I’m completing my Associate’s Degree in Computer Science, graduating in May 2025. I plan to continue my education and earn my Bachelor’s Degree from Virginia Tech or the University of Virginia.</p>
         </div>
+        
         <section id="skills">
             <div class="skills-header">
-            <h2>Technical Skills</h2>
+                <h2>Technical Skills</h2>
             </div>
-            <div class="skills-container">
-                <div class="skills-slider">
-                    <div class="skill">
-                        <i class="fab fa-html5"></i> HTML
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-css3-alt"></i> CSS
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-python"></i> Python
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-js"></i> JavaScript
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-java"></i> Java
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-linux"></i> Linux
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-debian"></i> Debian
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-fedora"></i> Fedora
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-git-alt"></i> Git
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-github"></i> Github
-                    </div>
         
-                    <!-- Duplicate for infinite loop effect -->
-                    <div class="skill">
-                        <i class="fab fa-html5"></i> HTML
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-css3-alt"></i> CSS
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-python"></i> Python
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-js"></i> JavaScript
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-java"></i> Java
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-linux"></i> Linux
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-debian"></i> Debian
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-fedora"></i> Fedora
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-git-alt"></i> Git
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-github"></i> Github
-                    </div>
+            <div class="skills-grid">
+                <!-- Skill Box Example (Repeat for each skill) -->
+                <div class="skill-box">
+                    <i class="fab fa-html5 skill-icon" data-color="#E34F26"></i>
+                    <p>HTML</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-css3-alt skill-icon" data-color="#1572B6"></i>
+                    <p>CSS</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-js skill-icon" data-color="#F7DF1E"></i>
+                    <p>JavaScript</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-python skill-icon" data-color="#3776AB"></i>
+                    <p>Python</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-java skill-icon" data-color="#007396"></i>
+                    <p>Java</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-git-alt skill-icon" data-color="#F05032"></i>
+                    <p>Git</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-github skill-icon" data-color="#181717"></i>
+                    <p>GitHub</p>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-linux skill-icon" data-color="#FCC624"></i>
+                    <p>Linux</p>
                 </div>
             </div>
         </section>
+        
         
         <section id="education">
             <h2>Education</h2>
@@ -119,7 +118,7 @@
         
                 <!-- School 1 -->
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-dot" data-number="1"></div>
                     <div class="timeline-content">
                         <img src="images/marshall.jpg" alt="Marshall High School" class="school-image">
                         <div class="school-info">
@@ -131,7 +130,7 @@
         
                 <!-- School 2 -->
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-dot" data-number="2"></div>
                     <div class="timeline-content">
                         <img src="images/nvcc-logo.jpg" alt="NVCC" class="school-image">
                         <div class="school-info">
@@ -147,7 +146,7 @@
         
                 <!-- School 3 -->
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-dot" data-number="3"></div>
                     <div class="timeline-content">
                         <img src="images/vt-logo.jpg" alt="VT/UVA" class="school-image">
                         <div class="school-info">
@@ -160,10 +159,116 @@
             </div>
         </section>
         
+        <section id="projects">
+            <h2>My Personal Projects</h2>
+            
+            <div class="project-card">
+                <!-- Project Image -->
+                <div class="project-image">
+                    <img src="images/cmertz-dev.jpg" alt="cmertz.dev">
+                </div>
         
+                <!-- Project Info -->
+                <div class="project-info">
+                    <h3 class="project-title">cmertz.dev</h3>
+        
+                    <!-- Tech Stack -->
+                    <div class="project-tech">
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+        
+                    <!-- Project Description -->
+                    <p class="project-description">
+                        Personal portfolio website
+                    </p>
+        
+                    <!-- Learn More Button (Hidden by default) -->
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+        <!-- Coding Journey Column -->
+        <div class="about-box">
+            <h3>Coding Journey</h3>
+            <p>
+                I began my coding journey in high school, taking an intro to java course. Starting with Java,
+                I quickly moved on to python in college. In my free time, I have learnt web development, including
+                HTML, CSS, and JavaScript. I'm now expanding
+                my skills into full-stack development, working on real-world projects like cmertz.dev. With websites
+                being full of trackers an ads, I have found an interest in minimalism and no useless Javascript. For
+                example, this website was built with only 77 lines of Javascript.
+            </p>
+        </div>
+
+        <!-- Personal Hobbies Column -->
+        <div class="about-box">
+            <h3>Personal Hobbies</h3>
+            <p>
+                Outside of coding, I enjoy sports like football, soccer and skiing, as well as cars, gaming, 
+                 babysitting and experimenting with Linux distros. I also
+                enjoy building PCs, exploring new technologies, and finding ways to become an efficient developer.
+                This website was made on Fedora with the PC that I have built.
+            </p>
+        </div>
+
+        <!-- Unrelated Work Column -->
+        <div class="about-box">
+            <h3>Unrelated Work</h3>
+            <p>
+                Alongside my studies, I've worked as a delivery driver for DoorDash and Ubereats. This role taught me
+                time management, adaptability, and problem-solving—skills I now apply to my tech projects.
+                I also worked for GameGym, a company that gives underprivledged kids the chance to play
+                video games. My role included setting up the PCs and teaching them how to play.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+        <!-- Discord Contact -->
+        <div class="contact-box">
+            <i class="fab fa-discord contact-icon"></i>
+            <h3>Discord</h3>
+            <p>cmertz</p>
+        </div>
+
+        <!-- Email Contact -->
+        <div class="contact-box">
+            <i class="fas fa-envelope contact-icon"></i>
+            <h3>Email</h3>
+            <p>camden.mertz@gmail.com</p>
+        </div>
+
+        <!-- Phone Contact -->
+        <div class="contact-box">
+            <i class="fas fa-phone contact-icon"></i>
+            <h3>Phone</h3>
+            <p>+1 571 446 9983</p>
+        </div>
+    </div>
+</section>
+
+
+
+
         
         
     </section>
+
+    
     
 
     
